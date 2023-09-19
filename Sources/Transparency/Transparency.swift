@@ -15,9 +15,11 @@ public class WidgetBackground {
         screenSize: CGSize = UIScreen.main.bounds.size,
         scale: CGFloat = UIScreen.main.scale
     ) {
+        self.scale = scale
         self.bounds = getBounds(screenSize: screenSize, scale: scale)
     }
     
+    private let scale: CGFloat
     private var bounds: WidgetBounds? = nil
 }
 
@@ -50,17 +52,17 @@ extension WidgetBackground {
     public func getImages(for screenshot: CGImage) -> WidgetBackgoundImages? {
         guard let validBounds = bounds else {return nil}
         guard
-            let stl = screenshot.cropping(to: validBounds.smallTopLeft),
-            let scl = screenshot.cropping(to: validBounds.smallCenterLeft),
-            let sbl = screenshot.cropping(to: validBounds.smallBottomLeft),
-            let str = screenshot.cropping(to: validBounds.smallTopRight),
-            let scr = screenshot.cropping(to: validBounds.smallCenterRight),
-            let sbr = screenshot.cropping(to: validBounds.smallBottomRight),
-            let mt = screenshot.cropping(to: validBounds.mediumTop),
-            let mc = screenshot.cropping(to: validBounds.mediumCenter),
-            let mb = screenshot.cropping(to: validBounds.mediumBottom),
-            let lt = screenshot.cropping(to: validBounds.largeTop),
-            let lb = screenshot.cropping(to: validBounds.largeBottom)
+            let stl = screenshot.cropping(to: validBounds.smallTopLeft * scale),
+            let scl = screenshot.cropping(to: validBounds.smallCenterLeft * scale),
+            let sbl = screenshot.cropping(to: validBounds.smallBottomLeft * scale),
+            let str = screenshot.cropping(to: validBounds.smallTopRight * scale),
+            let scr = screenshot.cropping(to: validBounds.smallCenterRight * scale),
+            let sbr = screenshot.cropping(to: validBounds.smallBottomRight * scale),
+            let mt = screenshot.cropping(to: validBounds.mediumTop * scale),
+            let mc = screenshot.cropping(to: validBounds.mediumCenter * scale),
+            let mb = screenshot.cropping(to: validBounds.mediumBottom * scale),
+            let lt = screenshot.cropping(to: validBounds.largeTop * scale),
+            let lb = screenshot.cropping(to: validBounds.largeBottom * scale)
         else {return nil}
         
         return WidgetBackgoundImages(
