@@ -53,7 +53,7 @@ let BoundsDatabase: [DeviceModel: WidgetBounds] = [
         smallTopLeft:     CGRect(x:  27,    y:  90, width: 158, height: 158),
         smallCenterLeft:  CGRect(x:  27,    y: 286, width: 158, height: 158),
         smallBottomLeft:  CGRect(x:  27,    y: 482, width: 158, height: 158),
-        smallTopRight:    CGRect(x: 207.5,  y:  90, width: 158, height: 158),
+        smallTopRight:    CGRect(x: 207.6667,  y:  90, width: 158, height: 158),
         smallCenterRight: CGRect(x: 207.67, y: 286, width: 158, height: 158),
         smallBottomRight: CGRect(x: 207.67, y: 482, width: 158, height: 158),
         mediumTop:        CGRect(x:  27,    y:  90, width: 338, height: 158),
