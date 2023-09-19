@@ -59,21 +59,21 @@ let BoundsDatabase: [DeviceModel: WidgetBounds] = [
         mediumTop:        CGRect(x:  27,     y:  90, width: 338, height: 158),
         mediumCenter:     CGRect(x:  27,     y: 286, width: 338, height: 158),
         mediumBottom:     CGRect(x:  27,     y: 482, width: 338, height: 158),
-        largeTop:         CGRect(x:  27,     y:  90, width: 338, height: 338.67),
-        largeBottom:      CGRect(x:  27,     y: 286, width: 338, height: 338.67)
+        largeTop:         CGRect(x:  27,     y:  90, width: 338, height: 354),
+        largeBottom:      CGRect(x:  27,     y: 286, width: 338, height: 354)
     ),
     .iPhone15PM_15L_14PM : WidgetBounds(
-        smallTopLeft:     CGRect(x:  31   , y:  94, width: 170   , height: 170),
-        smallCenterLeft:  CGRect(x:  31   , y: 306, width: 170   , height: 170),
-        smallBottomLeft:  CGRect(x:  31   , y: 518, width: 170   , height: 170),
-        smallTopRight:    CGRect(x: 228.67, y:  94, width: 170   , height: 170),
-        smallCenterRight: CGRect(x: 228.67, y: 306, width: 170   , height: 170),
-        smallBottomRight: CGRect(x: 228.67, y: 518, width: 170   , height: 170),
+        smallTopLeft:     CGRect(x:  31   , y:  94, width: 170    , height: 170),
+        smallCenterLeft:  CGRect(x:  31   , y: 306, width: 170    , height: 170),
+        smallBottomLeft:  CGRect(x:  31   , y: 518, width: 170    , height: 170),
+        smallTopRight:    CGRect(x: 228.67, y:  94, width: 170    , height: 170),
+        smallCenterRight: CGRect(x: 228.67, y: 306, width: 170    , height: 170),
+        smallBottomRight: CGRect(x: 228.67, y: 518, width: 170    , height: 170),
         mediumTop:        CGRect(x:  31   , y:  94, width: 367.333, height: 170),
-        mediumCenter:     CGRect(x:  31   , y: 306, width: 367.67, height: 170),
-        mediumBottom:     CGRect(x:  31   , y: 518, width: 367.67, height: 170),
-        largeTop:         CGRect(x:  31   , y:  94, width: 367.67, height: 367.67),
-        largeBottom:      CGRect(x:  31   , y: 306, width: 367.67, height: 367.67)
+        mediumCenter:     CGRect(x:  31   , y: 306, width: 367.333, height: 170),
+        mediumBottom:     CGRect(x:  31   , y: 518, width: 367.333, height: 170),
+        largeTop:         CGRect(x:  31   , y:  94, width: 367.333, height: 382),
+        largeBottom:      CGRect(x:  31   , y: 306, width: 367.333, height: 382)
     ),
     .iPhone13m : WidgetBounds(
         smallTopLeft:     CGRect(x:  22, y:  74    , width: 149, height: 149),
