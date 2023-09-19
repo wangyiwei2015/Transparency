@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct WidgetBounds {
+public struct WidgetBounds {
     let smallTopLeft:     CGRect
     let smallCenterLeft:  CGRect
     let smallBottomLeft:  CGRect
@@ -21,7 +21,7 @@ struct WidgetBounds {
     let largeBottom:      CGRect
 }
 
-struct WidgetBackgoundImages {
+public struct WidgetBackgoundImages {
     let smallTopLeft:     CGImage
     let smallCenterLeft:  CGImage
     let smallBottomLeft:  CGImage
@@ -35,7 +35,7 @@ struct WidgetBackgoundImages {
     let largeBottom:      CGImage
 }
 
-enum DeviceModel: Int {
+public enum DeviceModel: Int {
     case iPhone15PM_15L_14PM
     case iPhone15P_15_14P
     case iPhone13m

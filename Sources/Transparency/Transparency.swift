@@ -4,7 +4,7 @@
 import Foundation
 import UIKit
 
-class WidgetBackground {
+public class WidgetBackground {
     
     /// Create an instance to make background images for your home screen.
     /// - Parameter screenSize: The size of your screen in points.
