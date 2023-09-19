@@ -49,7 +49,7 @@ public enum DeviceModel: Int {
 }
 
 let BoundsDatabase: [DeviceModel: WidgetBounds] = [
-    .iPhone15PM_15L_14PM : WidgetBounds(
+    .iPhone15P_15_14P : WidgetBounds(
         smallTopLeft:     CGRect(x:  27,    y:  90, width: 158,    height: 158),
         smallCenterLeft:  CGRect(x:  27,    y: 286, width: 158,    height: 158),
         smallBottomLeft:  CGRect(x:  27,    y: 482, width: 158,    height: 158),
@@ -62,7 +62,7 @@ let BoundsDatabase: [DeviceModel: WidgetBounds] = [
         largeTop:         CGRect(x:  27,    y:  90, width: 338.67, height: 338.67),
         largeBottom:      CGRect(x:  27,    y: 286, width: 338.67, height: 338.67)
     ),
-    .iPhone15P_15_14P : WidgetBounds(
+    .iPhone15PM_15L_14PM : WidgetBounds(
         smallTopLeft:     CGRect(x:  31   , y:  94, width: 170   , height: 170),
         smallCenterLeft:  CGRect(x:  31   , y: 306, width: 170   , height: 170),
         smallBottomLeft:  CGRect(x:  31   , y: 518, width: 170   , height: 170),
