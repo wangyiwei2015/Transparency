@@ -22,17 +22,17 @@ public struct WidgetBounds {
 }
 
 public struct WidgetBackgoundImages {
-    let smallTopLeft:     CGImage
-    let smallCenterLeft:  CGImage
-    let smallBottomLeft:  CGImage
-    let smallTopRight:    CGImage
-    let smallCenterRight: CGImage
-    let smallBottomRight: CGImage
-    let mediumTop:        CGImage
-    let mediumCenter:     CGImage
-    let mediumBottom:     CGImage
-    let largeTop:         CGImage
-    let largeBottom:      CGImage
+    public let smallTopLeft:     CGImage
+    public let smallCenterLeft:  CGImage
+    public let smallBottomLeft:  CGImage
+    public let smallTopRight:    CGImage
+    public let smallCenterRight: CGImage
+    public let smallBottomRight: CGImage
+    public let mediumTop:        CGImage
+    public let mediumCenter:     CGImage
+    public let mediumBottom:     CGImage
+    public let largeTop:         CGImage
+    public let largeBottom:      CGImage
 }
 
 public enum DeviceModel: Int {
