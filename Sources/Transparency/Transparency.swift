@@ -11,7 +11,7 @@ public class WidgetBackground {
     /// - Parameter scale: The scale of your screen (= pixels / points).
     ///
     /// For your current device as default, leave the parameters blank.
-    init(
+    public init(
         screenSize: CGSize = UIScreen.main.bounds.size,
         scale: CGFloat = UIScreen.main.scale
     ) {
