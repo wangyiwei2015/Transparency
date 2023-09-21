@@ -81,6 +81,17 @@ extension WidgetBackground {
     }
 }
 
+extension WidgetBackgoundImages {
+    /// Get flat array of cropped images.
+    /// - Returns: The images cropped in order.
+    ///
+    /// Order: small{top left, top right, center left, center right, bottom left, bottom right}; medium{top, center, bottom}; large{top, bottom}.
+    public func flattened() -> [CGImage] {
+        [smallTopLeft, smallTopRight, smallCenterLeft, smallCenterRight, smallBottomLeft, smallBottomRight,
+        mediumTop, mediumCenter, mediumBottom, largeTop, largeBottom]
+    }
+}
+
 /// Enables multiplying a CGRect by some scale.
 /// - Parameter left: The original rect.
 /// - Parameter right: The scale.
