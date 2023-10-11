@@ -161,11 +161,11 @@ let BoundsDatabase: [DeviceModel: WidgetBounds] = [
         smallTopRight:    CGRect(x: 218, y:  80, width: 169, height: 169),
         smallCenterRight: CGRect(x: 218, y: 290, width: 169, height: 169),
         smallBottomRight: CGRect(x: 218, y: 500, width: 169, height: 169),
-        mediumTop:        CGRect(x:  27, y:  80, width: 379, height: 169),
-        mediumCenter:     CGRect(x:  27, y: 290, width: 379, height: 169),
-        mediumBottom:     CGRect(x:  27, y: 500, width: 379, height: 169),
-        largeTop:         CGRect(x:  27, y:  80, width: 379, height: 379),
-        largeBottom:      CGRect(x:  27, y: 290, width: 379, height: 379)
+        mediumTop:        CGRect(x:  27, y:  80, width: 360, height: 169),
+        mediumCenter:     CGRect(x:  27, y: 290, width: 360, height: 169),
+        mediumBottom:     CGRect(x:  27, y: 500, width: 360, height: 169),
+        largeTop:         CGRect(x:  27, y:  80, width: 360, height: 379),
+        largeBottom:      CGRect(x:  27, y: 290, width: 360, height: 379)
     ),
     .iPhone8P_7P_6sP : WidgetBounds(
         smallTopLeft:     CGRect(x:  33, y:  38, width: 159, height: 159),
