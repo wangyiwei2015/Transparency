@@ -34,7 +34,7 @@ extension WidgetBackground {
         case (428, 926): return scale == 3 ? db[.iPhone14L_13PM_12PM] : nil
         // case (375, 812): return scale == 3 ? db[.iPhone12m] : nil
         case (375, 812): return scale == 3 ? db[.iPhone11P_XS_X] : nil
-        case (414, 896): return scale == 3 ? db[.iPhone11PM_11_XSM_XR] : nil
+        case (414, 896): return scale <= 3 ? db[.iPhone11PM_11_XSM_XR] : nil
         case (414, 736): return scale == 3 ? db[.iPhone8P_7P_6sP] : nil
         case (375, 667): return scale == 2 ? db[.iPhone47i] : nil
         default: return nil
