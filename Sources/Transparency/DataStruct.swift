@@ -43,7 +43,8 @@ public enum DeviceModel: Int {
     case iPhone14L_13PM_12PM
     case iPhone12m
     case iPhone11P_XS_X
-    case iPhone11PM_11_XSM_XR
+    case iPhone11PM_XSM
+    case iPhone11_XR
     case iPhone8P_7P_6sP
     case iPhone47i
 }
@@ -140,7 +141,7 @@ let BoundsDatabase: [DeviceModel: WidgetBounds] = [
         largeTop:         CGRect(x:  23, y:  71, width: 329, height: 329),
         largeBottom:      CGRect(x:  23, y: 261, width: 329, height: 329)
     ),
-    .iPhone11PM_11_XSM_XR : WidgetBounds(
+    .iPhone11PM_XSM : WidgetBounds(
         smallTopLeft:     CGRect(x:  27, y:  76, width: 169, height: 169),
         smallCenterLeft:  CGRect(x:  27, y: 286, width: 169, height: 169),
         smallBottomLeft:  CGRect(x:  27, y: 496, width: 169, height: 169),
@@ -152,6 +153,19 @@ let BoundsDatabase: [DeviceModel: WidgetBounds] = [
         mediumBottom:     CGRect(x:  27, y: 496, width: 360, height: 169),
         largeTop:         CGRect(x:  27, y:  76, width: 360, height: 360),
         largeBottom:      CGRect(x:  27, y: 286, width: 360, height: 360)
+    ),
+    .iPhone11_XR : WidgetBounds(
+        smallTopLeft:     CGRect(x:  27, y:  80, width: 169, height: 169),
+        smallCenterLeft:  CGRect(x:  27, y: 290, width: 169, height: 169),
+        smallBottomLeft:  CGRect(x:  27, y: 500, width: 169, height: 169),
+        smallTopRight:    CGRect(x: 218, y:  80, width: 169, height: 169),
+        smallCenterRight: CGRect(x: 218, y: 290, width: 169, height: 169),
+        smallBottomRight: CGRect(x: 218, y: 500, width: 169, height: 169),
+        mediumTop:        CGRect(x:  27, y:  80, width: 379, height: 169),
+        mediumCenter:     CGRect(x:  27, y: 290, width: 379, height: 169),
+        mediumBottom:     CGRect(x:  27, y: 500, width: 379, height: 169),
+        largeTop:         CGRect(x:  27, y:  80, width: 379, height: 379),
+        largeBottom:      CGRect(x:  27, y: 290, width: 379, height: 379)
     ),
     .iPhone8P_7P_6sP : WidgetBounds(
         smallTopLeft:     CGRect(x:  33, y:  38, width: 159, height: 159),
